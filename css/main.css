@@ -1,0 +1,13 @@
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+
+body{
+    text-align: center;
+}
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+

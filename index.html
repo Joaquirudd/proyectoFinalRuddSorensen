@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('JALJNkyXXNyxpQ4rA')
+</script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <h1> Calificaciónes de Alumnos </h1>
+    <h2> Calcule la calificación final de un alumno: </h2>
+
+    <input type="text" name="" id="nombreAlumno" placeholder="nombreAlumno">
+    <input type="text" name="" id="calificacion1" placeholder="calificacion1">
+    <input type="text" name="" id="calificacion2" placeholder="calificacion2">
+    <input type="text" name="" id="calificacion3" placeholder="calificacion3">
+    <input type="submit" value="calcular" id="boton">
+
+    <p id="calificacionFinal"></p>
+
+    <h2> Enviar el resultado por email al instituto: </h2>
+
+    <form id="form">
+        <div class="field">
+          <label for="to_name">Nombre del alumno:</label>
+          <input type="text" name="to_name" id="to_name">
+        </div>
+        <div class="field">
+          <label for="from_name">Nombre de del profesor:</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="message">Calificacion del alumno: (un número del 0 al 10)</label>
+          <input type="text" name="message" id="message">
+        </div>
+      
+        <input type="submit" id="button" value="Send Email" >
+      </form>
+   
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/site.js"></script>
+
+</html>
